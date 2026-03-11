@@ -103,7 +103,9 @@ async def regle(ctx):
 
     await ctx.send(embed=embed)
 
-
+@bot.command()
+async def test(ctx):
+    await ctx.send("Test")
 
 
 bot.run(os.getenv('DISCORD_TOKEN'))
